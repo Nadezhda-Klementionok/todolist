@@ -4,8 +4,6 @@ import json
 key_names = ['id', 'task', 'priority', 'time_to_spend']
 key_widths = [10, 18, 10, 15]
 
-
-
 def show_head():
     
     for (n, w) in zip(key_names, key_widths):
@@ -197,8 +195,10 @@ def main():
 
 
 if __name__ == "__main__":
+    
     print('Main.py запущена самостоятельно!')
 
     main()
+
 else:
     print('Main.py импортирована.')
