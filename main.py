@@ -1,9 +1,5 @@
 import requests
-
-
 import json
-
-
 
 key_names = ['id', 'task', 'priority', 'time_to_spend']
 key_widths = [10, 18, 10, 15]
