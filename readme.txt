@@ -1,57 +1,54 @@
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) 
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 
-Файл main.py описывает список дневных задач, каждая из которых описана параметрами 
-- номер, наименование, приоритет, время выполнения с использованием json-server.
+**main.py** is a simple application for creating day-tasks and putting them into a list using json-server. 
 
-1. Назначение, краткое описание.
+## Installation
 
-main.py - клиент-сервер- предназначен для формирования списка дневных задач в 
-формате json/
+Cloning, installing, and running Hyde is as simple as executing the following commands:
 
-2. Описание.
+##### Step 1: clone the repo
+```
+git@github.com:Nadezhda-Klementionok/todolist.git
+```
 
-Программа работает в среде VS Code, базово с программой совместно работает файл day_tasks.json.
+##### Step 2: setup node.js
+ - https://nodejs.org/en/download
 
-В исходном коде  используются следующие соглашения об импорте:
-import requests
-import json
+##### Step 3: Install JSON Server
+```
+npm install -g json-server
+```
 
-Файл day_tasks.json содержит перечень задач(task), каждая из которых описана 4 параметрами:
-- номер - id
-- наименование - name
-- приоритет - priority
-- время выполнения задачи - time_to_spend
+## Documentation
 
-Программа содержит в себе следующие основные функции.
-
-1 - show_json_and_dict() - Функция вывода содержимого файла day_tasks.json в виде json и словаря.
-2 - task_get() - Функция вывода задач файла day_tasks.json, отсортированных по приоритету.
-3 - task_get_id() - Функция вывода task по введенному id.
-4 - task_delete() - Функция удаления task по введенному id.
-5 - task_post() - Функция добавления нового task в day_tasks.
-6 - task_put() - Функция изменения task в day_tasks.
-
-Программа содержит функционал по выбору необходимой операции (функция main()):
-
-3. Installation
-
-3.1 git clone
-3.2 setup node.js
-	http://nodejs.org/en/download
-3.3 install JSON server
-	npm install -g json-server
-
-4. Documentation
-
+```
 python -m pydoc .\main.py
+```
 
-5. Running the app
+## Supported Features
+1 - show_json_and_dict() - 
+Function for displaying the contents of the day_tasks file.json in the form of json and a dictionary.
+2 - task_get() is a function for displaying tasks in the day_tasks.json file sorted by priority.
+3 - task_get_id() - task output function based on the entered id.
+4 - task_delete() - The task deletion function by the entered id.
+5 - task_post() - Function for adding a new task to day_tasks.
+6 - task_put() - Function for changing task to day_tasks.
 
-5.1 start JSON Server
-	json-server --watch day_tasks.json
-5.2 run the main app
-	py main.py
 
-6. Контактная информация.
+## Running the app
 
-Клементионок Надежда, kayat_n@tut.by
+Cloning, installing, and running Hyde is as simple as executing the following commands:
 
+##### Step 1: Start JSON Server
+```
+json-server --watch day_tasks.json
+```
+##### Step 2: Run the main app
+```
+py main.py
+```
+
+## Contributing
+
+kayat_n@tut.by
