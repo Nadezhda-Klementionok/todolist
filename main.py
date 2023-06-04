@@ -2,7 +2,12 @@ import requests
 import json
 
 key_names = ['id', 'task', 'priority', 'time_to_spend']
+
 key_widths = [10, 18, 10, 15]
+
+
+
+
 
 def show_head():
     
@@ -50,6 +55,9 @@ def show_json_and_dict():
 
 def task_get():
     '''Функция вывода задач файла day_tasks.json, отсортированных по приоритету.'''
+    
+    
+    
     try:
         reply = requests.get(
             "http://localhost:3000/day_tasks?_sort=priority&_order=desc")
